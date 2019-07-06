@@ -15,9 +15,24 @@ function Set_c1(state)
     
     
     if(state == 0)
-        fprintf(s1,'c1d');
+        fwrite(s1,'c1d');
     elseif(state == 1)
         fprintf(s1,'c1e');
     end
-
+    tic;
+   
+%     if(s1.BytesAvailable > 0)
+    msg=fread(s1,1);
+%     fprintf('in fread loop')
+%     flushinput(s1);
+%     fprintf('%d',double(msg));
+    disp(msg);
+    disp(toc);
+    fprintf('\n');
+    flushinput(s1);
+%    end
+   
+%     fprintf('out of loop');
+    
+    
 end

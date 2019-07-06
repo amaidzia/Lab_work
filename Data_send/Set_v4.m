@@ -16,4 +16,11 @@ function Set_v4(angle)
     angle = char(angle);
     fprintf(ser,['v4_' angle]);
     
+    
+    msg=fscanf(ser);
+    fprintf(msg);
+    fprintf('\n');
+
+
+    
 end

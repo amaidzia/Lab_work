@@ -20,4 +20,9 @@ function Set_s3(state)
         fprintf(ser,'s3_on');
     end
 
+    msg=fscanf(ser);
+    fprintf(msg);
+    fprintf('\n');
+
+
 end

@@ -16,4 +16,10 @@ function Set_v2(angle)
     angle = char(angle);
     fprintf(ser,['v2_' angle]);
     
+    msg=fscanf(ser);
+    fprintf(msg);
+    fprintf('\n');
+
+
+    
 end

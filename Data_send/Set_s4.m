@@ -19,5 +19,11 @@ function Set_s4(state)
     elseif(state == 1)
         fprintf(ser,'s4_on');
     end
+    msg=fscanf(ser);
+    fprintf(msg);
+    fprintf('\n');
 
+
+    
+    
 end

@@ -19,5 +19,11 @@ function Set_c2(state)
     elseif(state == 1)
         fprintf(s1,'c2e');
     end
+    
+    msg=fscanf(s1);
+    fprintf(msg);
+    fprintf('\n');
+
+
 
 end
